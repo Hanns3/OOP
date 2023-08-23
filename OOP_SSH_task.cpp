@@ -28,10 +28,7 @@ public:
         StudentList.push_back(studentName);
     }
 
-    ~Course()
-    {
-
-    }
+    ~Course() = default;
 };
 
 class Person
@@ -75,15 +72,9 @@ public:
         return contact_info;
     }
 
-    virtual void get_info()
-    {
+    virtual void get_info() = 0;
 
-    }
-
-    ~Person()
-    {
-
-    }
+    ~Person() = default;
 };
 
 class Student : public Person
@@ -116,10 +107,7 @@ public:
         }
     }
 
-    ~Student()
-    {
-
-    }
+    ~Student() = default;
 };
 
 
@@ -152,10 +140,7 @@ public:
         }
     }
     
-    ~Professor()
-    {
-
-    }
+    ~Professor() = default;
 };
 
 
